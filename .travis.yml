@@ -3,4 +3,4 @@ node_js:
 - "1"
 sudo: false
 language: node_js
-script: "npm run test-cov"
+script: "npm run test"

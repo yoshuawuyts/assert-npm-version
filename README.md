@@ -16,6 +16,12 @@ $ npm install assert-npm-version
 $ assert-npm-version 3.0.0
 ```
 
+## Why?
+When working with multiple people and / or node versions, it can quickly become
+confusing what features `npm` has, or doesn't have. By asserting that `npm` is
+at least a certain version, at least some `npm` related issues can be caught
+early.
+
 ## License
 [MIT](https://tldrlegal.com/license/mit-license)
 

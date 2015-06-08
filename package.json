@@ -1,0 +1,31 @@
+{
+  "name": "assert-npm-version",
+  "version": "1.0.0",
+  "description": "Assert that npm is at least a certain version",
+  "bin": "./cli.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard"
+  },
+  "repository": "yoshuawuyts/assert-npm-version",
+  "keywords": [
+    "assert",
+    "npm",
+    "version",
+    "cli"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "minimist": "^1.1.1",
+    "semver": "^4.3.6"
+  },
+  "devDependencies": {
+    "standard": "^4.0.1"
+  },
+  "files": [
+    "LICENSE",
+    "index.js",
+    "cli.js",
+    "README.md"
+  ]
+}

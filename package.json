@@ -1,6 +1,6 @@
 {
   "name": "assert-npm-version",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Assert that npm is at least a certain version",
   "bin": "./cli.js",
   "main": "index.js",

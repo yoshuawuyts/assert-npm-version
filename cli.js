@@ -8,15 +8,15 @@ const args = minimist(process.argv.slice(2))
 const v = args._[0]
 
 if (args.help || args.h || !v) {
-  console.log('Usage: assert-npm-version <version>')
+  console.log('Usage: assert-npm-version <range>')
   exit(0)
 }
 
-if (!semver.valid(v)) exit(1, 'please provide a valid semantic version')
+if (!semver.validRange(v)) exit(1, 'please provide a valid semantic version')
 
 npv(v, function (err, ok, currVer) {
   if (err) exit(1, err)
-  if (!ok) exit(1, 'npm version ' + v + '>=' + currVer)
+  if (!ok) exit(1, 'npm version ' + currVer + ' != ' + v)
 })
 
 // exit the program

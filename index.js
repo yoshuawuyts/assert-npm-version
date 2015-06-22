@@ -8,6 +8,6 @@ module.exports = version
 function version (param, cb) {
   exec('npm -v', function (err, res) {
     if (err) cb(err)
-    cb(null, semver.gte(res, param), res.split('\n')[0])
+    cb(null, semver.satisfies(res, param), res.split('\n')[0])
   })
 }

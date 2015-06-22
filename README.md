@@ -14,14 +14,14 @@ $ npm install assert-npm-version
 ## Usage
 ### cli
 ```sh
-$ assert-npm-version 2.0.0
+$ assert-npm-version >=2.0.0
 ```
 
 ### package.json
 ```json
 {
   "scripts": {
-    "prepublish": "assert-npm-version 2.0.0"
+    "prepublish": "assert-npm-version >=2.0.0"
   }
 }
 ```
